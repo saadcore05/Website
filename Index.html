@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO & Social Meta Tags -->
+  <title>Premium Services | Expert Local Solutions</title>
+  <meta name="description" content="Top-rated local services. Fast response, certified experts, 100% satisfaction guaranteed. Call or book online today!">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              500: '#22c55e',
+              600: '#16a34a',
+              700: '#15803d',
+              dark: '#0f172a'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts & Lucide Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+  </style>
+
+  <!-- Local Business Schema for SEO (Google loves this) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Business Name",
+    "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952",
+    "telephone": "+1234567890",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "123 Business Street",
+      "addressLocality": "Your City",
+      "addressRegion": "State",
+      "postalCode": "00000",
+      "addressCountry": "US"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "128"
+    }
+  }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-brand-500 selection:text-white pb-16 md:pb-0">
+
+  <!-- TOP ANNOUNCEMENT BAR -->
+  <div class="bg-brand-dark text-slate-300 text-xs sm:text-sm py-2 px-4 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span>Now Accepting New Clients & Inquiries Today</span>
+      </div>
+      <div class="hidden sm:flex items-center gap-6">
+        <span class="flex items-center gap-1.5"><i data-lucide="clock" class="w-4 h-4 text-emerald-400"></i> Mon - Sat: 9:00 AM – 7:00 PM</span>
+        <span class="flex items-center gap-1.5"><i data-lucide="map-pin" class="w-4 h-4 text-emerald-400"></i> City Center, Your Location</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-brand-600 to-emerald-800 text-white flex items-center justify-center font-extrabold text-xl shadow-md shadow-brand-500/20">
+          B
+        </div>
+        <div>
+          <!-- REPLACE: Business Name -->
+          <span class="text-xl font-bold tracking-tight text-slate-900 block leading-tight">Business Name</span>
+          <span class="text-xs font-semibold text-brand-600 tracking-wider uppercase">Verified Business</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-8 font-medium text-slate-600 text-sm">
+        <a href="#services" class="hover:text-brand-600 transition">Services</a>
+        <a href="#why-us" class="hover:text-brand-600 transition">Why Choose Us</a>
+        <a href="#reviews" class="hover:text-brand-600 transition">Reviews</a>
+        <a href="#contact" class="hover:text-brand-600 transition">Location</a>
+      </nav>
+
+      <!-- Desktop CTA Buttons -->
+      <div class="hidden md:flex items-center gap-3">
+        <a href="tel:+1234567890" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg border border-slate-200 font-semibold text-slate-700 hover:bg-slate-50 transition text-sm">
+          <i data-lucide="phone-call" class="w-4 h-4 text-brand-600"></i>
+          Call Now
+        </a>
+        <button onclick="toggleModal(true)" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-brand-600 hover:bg-brand-700 text-white font-semibold shadow-md shadow-brand-600/20 transition text-sm">
+          Get Free Quote
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative pt-12 pb-20 lg:py-28 overflow-hidden bg-gradient-to-b from-white via-slate-50 to-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          
+          <!-- Trust Badge -->
+          <div class="inline-flex items-center gap-2 bg-emerald-50 border border-emerald-200 text-emerald-800 px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-semibold">
+            <div class="flex text-amber-400">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            </div>
+            <span>4.9 / 5.0 Star Rated on Google (120+ Reviews)</span>
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.15]">
+            Trusted, Reliable & Fast <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-teal-600">Local Services</span>
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+            Delivering high-standard solutions tailored for homes and businesses. Transparent pricing, verified experts, and prompt same-day assistance.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+            <button onclick="toggleModal(true)" class="w-full sm:w-auto px-7 py-3.5 bg-brand-600 hover:bg-brand-700 text-white font-bold rounded-xl shadow-lg shadow-brand-600/30 transition flex items-center justify-center gap-2 text-base">
+              <span>Book Appointment / Quote</span>
+              <i data-lucide="arrow-right" class="w-5 h-5"></i>
+            </button>
+            <a href="tel:+1234567890" class="w-full sm:w-auto px-7 py-3.5 bg-white border border-slate-300 hover:border-slate-400 text-slate-800 font-bold rounded-xl transition flex items-center justify-center gap-2 text-base shadow-sm">
+              <i data-lucide="phone" class="w-5 h-5 text-brand-600"></i>
+              <span>+1 (234) 567-890</span>
+            </a>
+          </div>
+
+          <!-- Feature Bullets -->
+          <div class="pt-6 border-t border-slate-200/80 grid grid-cols-3 gap-4 text-left">
+            <div>
+              <p class="font-bold text-slate-900 text-lg sm:text-xl">100%</p>
+              <p class="text-xs sm:text-sm text-slate-500">Guaranteed Work</p>
+            </div>
+            <div>
+              <p class="font-bold text-slate-900 text-lg sm:text-xl">15+ Mins</p>
+              <p class="text-xs sm:text-sm text-slate-500">Quick Callback</p>
+            </div>
+            <div>
+              <p class="font-bold text-slate-900 text-lg sm:text-xl">5★</p>
+              <p class="text-xs sm:text-sm text-slate-500">Google Verified</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Card / Graphic -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md bg-white rounded-3xl p-6 sm:p-8 shadow-2xl border border-slate-100">
+            <div class="absolute -top-3 -right-3 bg-brand-600 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-md">
+              Instant Confirmation
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-1">Request a Fast Callback</h3>
+            <p class="text-sm text-slate-500 mb-6">Leave your details and our team will contact you in under 15 minutes.</p>
+            
+            <form id="heroLeadForm" onsubmit="handleFormSubmit(event)" class="space-y-4">
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">Your Full Name</label>
+                <input required type="text" placeholder="John Doe" class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-500 text-sm">
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">Phone Number</label>
+                <input required type="tel" placeholder="+1 (555) 000-0000" class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-500 text-sm">
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">Service Needed</label>
+                <select class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-500 text-sm bg-white">
+                  <option>Standard Inspection / Consultation</option>
+                  <option>Emergency Service</option>
+                  <option>Full Commercial Package</option>
+                  <option>Other Services</option>
+                </select>
+              </div>
+              <button type="submit" class="w-full py-3.5 bg-brand-600 hover:bg-brand-700 text-white font-bold rounded-lg shadow-md transition text-sm flex justify-center items-center gap-2">
+                <i data-lucide="send" class="w-4 h-4"></i>
+                Request Callback
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-xs font-bold text-brand-600 tracking-wider uppercase mb-2">Our Specialized Services</h2>
+        <p class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Tailored Solutions for Your Everyday Needs</p>
+        <p class="text-slate-500 mt-4 text-base">We use industry-grade equipment and certified protocols to deliver durable, top-tier results every single time.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        
+        <!-- Service Card 1 -->
+        <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:border-brand-500/30 hover:shadow-xl transition-all duration-300 group flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-xl bg-brand-100 text-brand-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <i data-lucide="shield-check" class="w-7 h-7"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">Primary Consultation & Audit</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+              Complete on-site assessment, diagnostic report, and transparent cost estimates with zero hidden fees.
+            </p>
+          </div>
+          <button onclick="toggleModal(true)" class="text-brand-600 font-semibold text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+            Inquire Details <i data-lucide="chevron-right" class="w-4 h-4"></i>
+          </button>
+        </div>
+
+        <!-- Service Card 2 -->
+        <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:border-brand-500/30 hover:shadow-xl transition-all duration-300 group flex flex-col justify-between relative overflow-hidden">
+          <span class="absolute top-4 right-4 bg-emerald-500 text-white text-[10px] font-bold px-2 py-1 rounded">MOST POPULAR</span>
+          <div>
+            <div class="w-14 h-14 rounded-xl bg-brand-100 text-brand-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <i data-lucide="zap" class="w-7 h-7"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">Full Execution Package</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+              Comprehensive end-to-end service delivery handled by our senior technicians with warranty coverage included.
+            </p>
+          </div>
+          <button onclick="toggleModal(true)" class="text-brand-600 font-semibold text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+            Inquire Details <i data-lucide="chevron-right" class="w-4 h-4"></i>
+          </button>
+        </div>
+
+        <!-- Service Card 3 -->
+        <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:border-brand-500/30 hover:shadow-xl transition-all duration-300 group flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-xl bg-brand-100 text-brand-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <i data-lucide="wrench" class="w-7 h-7"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">Maintenance & Care</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+              Scheduled check-ups, preventative maintenance, and emergency on-demand support available round-the-clock.
+            </p>
+          </div>
+          <button onclick="toggleModal(true)" class="text-brand-600 font-semibold text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+            Inquire Details <i data-lucide="chevron-right" class="w-4 h-4"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GOOGLE REVIEWS SECTION (MASSIVE TRUST FACTOR) -->
+  <section id="reviews" class="py-20 bg-slate-50 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-14">
+        <div>
+          <div class="flex items-center gap-2 mb-2">
+            <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" class="w-6 h-6">
+            <span class="text-xs font-bold text-slate-500 uppercase tracking-widest">Verified Google Reviews</span>
+          </div>
+          <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Loved by Customers Throughout Town</h2>
+        </div>
+        <div class="mt-4 md:mt-0 flex items-center gap-2">
+          <div class="flex text-amber-400">
+            <i data-lucide="star" class="w-5 h-5 fill-amber-400"></i>
+            <i data-lucide="star" class="w-5 h-5 fill-amber-400"></i>
+            <i data-lucide="star" class="w-5 h-5 fill-amber-400"></i>
+            <i data-lucide="star" class="w-5 h-5 fill-amber-400"></i>
+            <i data-lucide="star" class="w-5 h-5 fill-amber-400"></i>
+          </div>
+          <span class="font-bold text-slate-800 text-lg">4.9 / 5.0</span>
+          <span class="text-slate-500 text-sm">(120+ reviews)</span>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        
+        <!-- Review 1 -->
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 mb-3">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            </div>
+            <p class="text-slate-700 text-sm leading-relaxed mb-6">
+              "Outstanding professionalism. They showed up exactly on time, explained the full scope upfront, and completed the work cleanly. Highly recommended!"
+            </p>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center font-bold text-slate-700 text-sm">
+              MR
+            </div>
+            <div>
+              <p class="text-sm font-bold text-slate-900">Michael Roberts</p>
+              <p class="text-xs text-slate-400">Local Guide • 2 months ago</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 mb-3">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            </div>
+            <p class="text-slate-700 text-sm leading-relaxed mb-6">
+              "Best experience I’ve had in this area. Customer support answered all my inquiries within 10 minutes. The pricing was completely fair."
+            </p>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center font-bold text-slate-700 text-sm">
+              SK
+            </div>
+            <div>
+              <p class="text-sm font-bold text-slate-900">Sarah Khan</p>
+              <p class="text-xs text-slate-400">Verified Client • 3 weeks ago</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 mb-3">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            </div>
+            <p class="text-slate-700 text-sm leading-relaxed mb-6">
+              "Saved us on a weekend emergency. Very polite, fully certified, and left the place spotless. Don’t hesitate to hire them."
+            </p>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center font-bold text-slate-700 text-sm">
+              DA
+            </div>
+            <div>
+              <p class="text-sm font-bold text-slate-900">David Anderson</p>
+              <p class="text-xs text-slate-400">Verified Client • 1 month ago</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION & CONTACT SECTION -->
+  <section id="contact" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-6 space-y-6">
+          <h2 class="text-xs font-bold text-brand-600 tracking-wider uppercase">Visit or Get Directions</h2>
+          <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Conveniently Located & Ready to Serve You</h3>
+          <p class="text-slate-600">Stop by during opening hours or give us a call to request immediate field service.</p>
+
+          <div class="space-y-4 pt-4">
+            <div class="flex items-start gap-4">
+              <div class="p-3 bg-slate-100 rounded-xl text-brand-600">
+                <i data-lucide="map-pin" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900">Address</h4>
+                <p class="text-slate-600 text-sm">Main Commercial Area, Your City Center</p>
+                <!-- REPLACE WITH YOUR GOOGLE MAPS LINK -->
+                <a href="https://maps.app.goo.gl/FDvJzhqStGC1Rn4ZA" target="_blank" class="text-brand-600 font-semibold text-xs inline-flex items-center gap-1 mt-1 hover:underline">
+                  Open in Google Maps <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="p-3 bg-slate-100 rounded-xl text-brand-600">
+                <i data-lucide="phone" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900">Phone</h4>
+                <p class="text-slate-600 text-sm">+1 (234) 567-890</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="p-3 bg-slate-100 rounded-xl text-brand-600">
+                <i data-lucide="clock" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900">Working Hours</h4>
+                <p class="text-slate-600 text-sm">Monday – Saturday: 9:00 AM – 7:00 PM</p>
+                <p class="text-slate-600 text-sm">Sunday: Emergency Calls Only</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Google Maps Embed Container -->
+        <div class="lg:col-span-6 h-[400px] rounded-3xl overflow-hidden shadow-xl border border-slate-200">
+          <iframe 
+            src="https://maps.google.com/maps?q=Central+Park+New+York&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+            class="w-full h-full border-0" 
+            allowfullscreen="" 
+            loading="lazy">
+          </iframe>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-brand-dark text-slate-400 py-12 border-t border-slate-800 text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3 text-white font-bold text-lg">
+        <div class="w-8 h-8 rounded-lg bg-brand-600 text-white flex items-center justify-center font-bold text-sm">
+          B
+        </div>
+        <span>Business Name</span>
+      </div>
+      <p>© <span id="year"></span> All rights reserved. Professional certified services.</p>
+      <div class="flex items-center gap-4">
+        <a href="#" class="hover:text-white transition">Privacy Policy</a>
+        <a href="#" class="hover:text-white transition">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP CHAT BUTTON -->
+  <a href="https://wa.me/1234567890?text=Hi!%20I%20found%20you%20on%20Google%20and%20would%20like%20to%20get%20a%20quote." target="_blank" class="fixed bottom-20 md:bottom-6 right-6 z-40 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform flex items-center justify-center">
+    <i data-lucide="message-circle" class="w-6 h-6"></i>
+  </a>
+
+  <!-- MOBILE STICKY BOTTOM BAR (CONVERTS 3X MORE MOBILE USERS) -->
+  <div class="fixed md:hidden bottom-0 left-0 right-0 z-50 bg-white border-t border-slate-200 px-4 py-3 flex items-center gap-3">
+    <a href="tel:+1234567890" class="flex-1 py-3 bg-slate-900 text-white font-bold text-center rounded-xl text-sm flex items-center justify-center gap-2">
+      <i data-lucide="phone" class="w-4 h-4 text-emerald-400"></i>
+      Call
+    </a>
+    <button onclick="toggleModal(true)" class="flex-1 py-3 bg-brand-600 text-white font-bold text-center rounded-xl text-sm flex items-center justify-center gap-2">
+      <i data-lucide="calendar" class="w-4 h-4"></i>
+      Quote
+    </button>
+  </div>
+
+  <!-- BOOKING / QUOTE MODAL POPUP -->
+  <div id="bookingModal" class="fixed inset-0 z-50 hidden bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 relative shadow-2xl border border-slate-100">
+      <button onclick="toggleModal(false)" class="absolute top-5 right-5 text-slate-400 hover:text-slate-700">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+
+      <h3 class="text-2xl font-bold text-slate-900 mb-1">Book an Appointment</h3>
+      <p class="text-sm text-slate-500 mb-6">Fill out the quick form below and we will confirm your slot.</p>
+
+      <form onsubmit="handleModalSubmit(event)" class="space-y-4">
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Full Name</label>
+          <input required type="text" placeholder="John Doe" class="w-full px-4 py-3 rounded-lg border border-slate-200 text-sm focus:ring-2 focus:ring-brand-500 outline-none">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Phone Number</label>
+          <input required type="tel" placeholder="+1 (555) 000-0000" class="w-full px-4 py-3 rounded-lg border border-slate-200 text-sm focus:ring-2 focus:ring-brand-500 outline-none">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Preferred Date</label>
+          <input required type="date" class="w-full px-4 py-3 rounded-lg border border-slate-200 text-sm focus:ring-2 focus:ring-brand-500 outline-none bg-white">
+        </div>
+        <button type="submit" class="w-full py-3.5 bg-brand-600 hover:bg-brand-700 text-white font-bold rounded-lg shadow-md transition text-sm">
+          Confirm Booking Request
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // Auto set Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Modal Controller
+    function toggleModal(show) {
+      const modal = document.getElementById('bookingModal');
+      if (show) {
+        modal.classList.remove('hidden');
+      } else {
+        modal.classList.add('hidden');
+      }
+    }
+
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      alert('Thank you! Your callback request has been received. Our team will contact you shortly.');
+      e.target.reset();
+    }
+
+    function handleModalSubmit(e) {
+      e.preventDefault();
+      alert('Thank you! Your appointment request has been scheduled. We will text you a confirmation.');
+      toggleModal(false);
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>
